@@ -7,10 +7,14 @@ import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 
@@ -31,17 +35,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // flash switch button
-        btnSwitch = (ImageButton) findViewById(R.id.btnSwitch);
-        isFlashOn=true;
+        isFlashOn=true; //Will turn torch on as soon as app starts
 
 
- /*
- * First check if device is supporting flashlight or not
- */
+     /*
+     * First check if device is supporting flashlight or not
+     */
         hasFlash = getApplicationContext().getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH);
         checkFlashlight(hasFlash);  //Will display dialog box indicating no flash available on device
-
         /*Returns error dialog if no flash on device*/
         if(!hasFlash){
             return; //IF no flashlight exists on device, escape from onCreate
@@ -55,6 +56,10 @@ public class MainActivity extends AppCompatActivity {
         } catch (CameraAccessException e) {
             e.printStackTrace();
         }
+
+
+        // flash switch button
+        btnSwitch = (ImageButton) findViewById(R.id.btnSwitch);
 
         //Only when button is pressed
         btnSwitch.setOnClickListener(new View.OnClickListener() {
@@ -76,12 +81,34 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.main_activity_menu, menu);
         return true;
     }
+
+
+    /**
+     * Handle all Menu Item clicks
+     * @param item
+     * @return
+     */
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case R.id.menu_settings:
+                    showEditDialog();
+                    Log.i(TAG, "Settings item clicked");
+                    return true;
+            case R.id.menu_about:
+                Log.i(TAG, "About item clicked");
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
 
     public void turnOnFlashLight() {
 
@@ -142,6 +169,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+    public void showEditDialog() {
+        FragmentManager fm = getSupportFragmentManager();
+        EditNameDialogFragment editNameDialogFragment = EditNameDialogFragment.newInstance("Some Title");
+        editNameDialogFragment.show(fm, "fragment_edit_name");
+    }
 
     @Override
     protected void onStop() {

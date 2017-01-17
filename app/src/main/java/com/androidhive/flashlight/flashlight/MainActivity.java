@@ -2,13 +2,13 @@ package com.androidhive.flashlight.flashlight;
 
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.pm.PackageManager;
 import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.ImageButton;
@@ -39,14 +39,15 @@ public class MainActivity extends AppCompatActivity {
  /*
  * First check if device is supporting flashlight or not
  */
+        /*
         hasFlash = getApplicationContext().getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH);
         checkFlashlight(hasFlash);  //Will display dialog box indicating no flash available on device
 
-        /*Returns error dialog if no flash on device*/
+        //Returns error dialog if no flash on device
         if(!hasFlash){
             return; //IF no flashlight exists on device, escape from onCreate
         }
-
+        */
 
         mCameraManager = (CameraManager) getSystemService(Context.CAMERA_SERVICE); //Only added in Lollipop	5.0	API level 21
         try {
@@ -88,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             //If version 6.0 Marshmallow or higher run torch
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                Log.i(TAG, "Light on!");
                 mCameraManager.setTorchMode(mCameraId, true); // setTorchMode api >=23
                //playOnOffSound();
                 btnSwitch.setImageResource(R.drawable.on);
@@ -103,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
 
         try {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                Log.i(TAG, "Light off!");
                 mCameraManager.setTorchMode(mCameraId, false); // setTorchMode api >=23
                 //playOnOffSound();
                 btnSwitch.setImageResource(R.drawable.off);

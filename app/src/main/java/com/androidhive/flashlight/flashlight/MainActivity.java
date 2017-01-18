@@ -9,13 +9,12 @@ import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.Menu;
 import android.view.View;
 import android.widget.ImageButton;
 
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     private ImageButton btnSwitch;
     private CameraManager mCameraManager;
@@ -24,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private boolean hasFlash;
 
 
-    private static final String TAG = "MainActivity: ";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,14 +74,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate(R.menu.main_activity_menu, menu);
-        return true;
-    }
 
     public void turnOnFlashLight() {
 

@@ -19,6 +19,8 @@ public class SettingsActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 
 }

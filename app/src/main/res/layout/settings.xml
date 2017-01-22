@@ -1,188 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
     android:orientation="vertical">
 
+
+    <CheckBox android:id="@+id/checkbox_meat"
+        android:layout_width="wrap_content"
+        android:textColor="@color/textColour"
+        android:text="@string/torch_activated"
+        android:layout_height="60dp"
+        android:onClick="onCheckboxClicked"
+        android:theme="@android:style/Theme.Holo"/>
+    <CheckBox android:id="@+id/checkbox_cheese"
+        android:layout_width="wrap_content"
+        android:text="@string/battery_warning"
+        android:textColor="@color/textColour"
+
+        android:layout_height="60dp"
+        android:onClick="onCheckboxClicked"
+        android:theme="@android:style/Theme.Holo"/>
+
+
     <TextView
         android:padding="10dp"
         android:text="@string/settings_title"
         android:textAlignment="center"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/textColour"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:id="@+id/settings_title"
 
         android:textAppearance="@style/TextAppearance.AppCompat" />
-    <TextView
-        android:padding="10dp"
-        android:text="@string/settings_title"
-        android:textAlignment="center"
-        android:textColor="@color/colorAccent"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
 
-
-        android:textAppearance="@style/TextAppearance.AppCompat" />
-    <TextView
-        android:padding="10dp"
-        android:text="@string/settings_title"
-        android:textAlignment="center"
-        android:textColor="@color/colorAccent"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-
-
-        android:textAppearance="@style/TextAppearance.AppCompat" />
-    <TextView
-        android:padding="10dp"
-        android:text="@string/settings_title"
-        android:textAlignment="center"
-        android:textColor="@color/colorAccent"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-
-
-        android:textAppearance="@style/TextAppearance.AppCompat" />
-    <TextView
-        android:padding="10dp"
-        android:text="@string/settings_title"
-        android:textAlignment="center"
-        android:textColor="@color/colorAccent"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-
-        android:textAppearance="@style/TextAppearance.AppCompat" />
-    <TextView
-        android:padding="10dp"
-        android:text="@string/settings_title"
-        android:textAlignment="center"
-        android:textColor="@color/colorAccent"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-
-
-        android:textAppearance="@style/TextAppearance.AppCompat" />
-    <TextView
-        android:padding="10dp"
-        android:text="@string/settings_title"
-        android:textAlignment="center"
-        android:textColor="@color/colorAccent"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-
-
-        android:textAppearance="@style/TextAppearance.AppCompat" />
-    <TextView
-        android:padding="10dp"
-        android:text="@string/settings_title"
-        android:textAlignment="center"
-        android:textColor="@color/colorAccent"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-
-
-        android:textAppearance="@style/TextAppearance.AppCompat" />
-    <TextView
-        android:padding="10dp"
-        android:text="@string/settings_title"
-        android:textAlignment="center"
-        android:textColor="@color/colorAccent"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-
-
-        android:textAppearance="@style/TextAppearance.AppCompat" />
-    <TextView
-        android:padding="10dp"
-        android:text="@string/settings_title"
-        android:textAlignment="center"
-        android:textColor="@color/colorAccent"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-
-
-        android:textAppearance="@style/TextAppearance.AppCompat" />
-    <TextView
-        android:padding="10dp"
-        android:text="@string/settings_title"
-        android:textAlignment="center"
-        android:textColor="@color/colorAccent"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-
-
-        android:textAppearance="@style/TextAppearance.AppCompat" />
-    <TextView
-        android:padding="10dp"
-        android:text="@string/settings_title"
-        android:textAlignment="center"
-        android:textColor="@color/colorAccent"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-
-
-        android:textAppearance="@style/TextAppearance.AppCompat" />
-    <TextView
-        android:padding="10dp"
-        android:text="@string/settings_title"
-        android:textAlignment="center"
-        android:textColor="@color/colorAccent"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-
-
-        android:textAppearance="@style/TextAppearance.AppCompat" />
-    <TextView
-        android:padding="10dp"
-        android:text="@string/settings_title"
-        android:textAlignment="center"
-        android:textColor="@color/colorAccent"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-
-
-        android:textAppearance="@style/TextAppearance.AppCompat" />
-    <TextView
-        android:padding="10dp"
-        android:text="@string/settings_title"
-        android:textAlignment="center"
-        android:textColor="@color/colorAccent"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-
-
-        android:textAppearance="@style/TextAppearance.AppCompat" />
-    <TextView
-        android:padding="10dp"
-        android:text="@string/settings_title"
-        android:textAlignment="center"
-        android:textColor="@color/colorAccent"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-
-
-        android:textAppearance="@style/TextAppearance.AppCompat" />
-    <TextView
-        android:padding="10dp"
-        android:text="@string/settings_title"
-        android:textAlignment="center"
-        android:textColor="@color/colorAccent"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-
-
-        android:textAppearance="@style/TextAppearance.AppCompat" />
-    <TextView
-        android:padding="10dp"
-        android:text="@string/settings_title"
-        android:textAlignment="center"
-        android:textColor="@color/colorAccent"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-
-
-        android:textAppearance="@style/TextAppearance.AppCompat" />
 </LinearLayout>
-
+</ScrollView>

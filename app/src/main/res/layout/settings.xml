@@ -2,16 +2,187 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background">
+    android:background="@color/background"
+    android:orientation="vertical">
 
     <TextView
         android:padding="10dp"
         android:text="@string/settings_title"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
-        android:layout_width="0dp"
-        android:layout_height="38dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:id="@+id/settings_title"
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+    <TextView
+        android:padding="10dp"
+        android:text="@string/settings_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+    <TextView
+        android:padding="10dp"
+        android:text="@string/settings_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+    <TextView
+        android:padding="10dp"
+        android:text="@string/settings_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+    <TextView
+        android:padding="10dp"
+        android:text="@string/settings_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+    <TextView
+        android:padding="10dp"
+        android:text="@string/settings_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+    <TextView
+        android:padding="10dp"
+        android:text="@string/settings_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+    <TextView
+        android:padding="10dp"
+        android:text="@string/settings_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+    <TextView
+        android:padding="10dp"
+        android:text="@string/settings_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+    <TextView
+        android:padding="10dp"
+        android:text="@string/settings_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+    <TextView
+        android:padding="10dp"
+        android:text="@string/settings_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+    <TextView
+        android:padding="10dp"
+        android:text="@string/settings_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+    <TextView
+        android:padding="10dp"
+        android:text="@string/settings_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+    <TextView
+        android:padding="10dp"
+        android:text="@string/settings_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+    <TextView
+        android:padding="10dp"
+        android:text="@string/settings_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+    <TextView
+        android:padding="10dp"
+        android:text="@string/settings_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+    <TextView
+        android:padding="10dp"
+        android:text="@string/settings_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+    <TextView
+        android:padding="10dp"
+        android:text="@string/settings_title"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
         android:layout_weight="1"
         android:textAppearance="@style/TextAppearance.AppCompat" />
 </LinearLayout>

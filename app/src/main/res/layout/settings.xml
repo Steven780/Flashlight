@@ -3,23 +3,33 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/scroll"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent"
+    android:background="@color/background">
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+
     android:orientation="vertical">
 
+    <TextView
+        android:padding="20dp"
+        android:text="@string/settings_title"
+        android:textAlignment="center"
+        android:textColor="@color/textColour"
+        android:textAllCaps="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/settings_title" />
 
-    <CheckBox android:id="@+id/checkbox_meat"
+    <CheckBox android:id="@+id/torch_activated"
         android:layout_width="wrap_content"
         android:textColor="@color/textColour"
         android:text="@string/torch_activated"
         android:layout_height="60dp"
         android:onClick="onCheckboxClicked"
         android:theme="@android:style/Theme.Holo"/>
-    <CheckBox android:id="@+id/checkbox_cheese"
+    <CheckBox android:id="@+id/battery_warning"
         android:layout_width="wrap_content"
         android:text="@string/battery_warning"
         android:textColor="@color/textColour"
@@ -29,16 +39,6 @@
         android:theme="@android:style/Theme.Holo"/>
 
 
-    <TextView
-        android:padding="10dp"
-        android:text="@string/settings_title"
-        android:textAlignment="center"
-        android:textColor="@color/textColour"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:id="@+id/settings_title"
-
-        android:textAppearance="@style/TextAppearance.AppCompat" />
 
 </LinearLayout>
 </ScrollView>

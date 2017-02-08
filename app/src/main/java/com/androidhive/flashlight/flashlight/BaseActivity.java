@@ -10,7 +10,7 @@ import android.view.MenuItem;
 public class BaseActivity extends AppCompatActivity {
 
 
-    public static final String TAG = "BaseActivity: ";
+    private static final String TAG = "BaseActivity: ";
     /**
      *
      * @param menu
@@ -29,7 +29,7 @@ public class BaseActivity extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.menu_settings:
 
-                //Launching SettingsActivity
+                //Launching SettingsActivity Preference fragment
                 Intent intent = new Intent(this, SettingsActivity.class);
                 startActivity(intent);
 

@@ -7,7 +7,6 @@ import android.hardware.camera2.CameraManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
@@ -21,7 +20,7 @@ public class MainActivity extends BaseActivity {
     private String mCameraId;
     private boolean isFlashOn;
     private boolean hasFlash;
-
+    private static final String TAG = "MainActivityActivity: ";
 
 
 
@@ -168,10 +167,6 @@ public class MainActivity extends BaseActivity {
         }
     }
 
-
-    /**
-     * Created by Steven on 08/01/2017.
-     */
 
 
 }

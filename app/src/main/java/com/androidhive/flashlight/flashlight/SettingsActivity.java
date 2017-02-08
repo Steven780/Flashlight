@@ -1,7 +1,7 @@
 package com.androidhive.flashlight.flashlight;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.CheckBox;
@@ -9,6 +9,8 @@ import android.widget.CheckBox;
 
 public class SettingsActivity extends BaseActivity {
 
+
+    private static final String TAG = "SettingsActivity: ";
     //Here we are customising the menu for this activity by removing the settings option.
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
@@ -31,21 +33,24 @@ public class SettingsActivity extends BaseActivity {
 
         // Check which checkbox was clicked
         switch(view.getId()) {
-            case R.id.checkbox_meat:
+            case R.id.torch_activated:
                 if (checked) {
                     // Put some meat on the sandwich
+                    Log.i(TAG, "onTorchCheckboxClicked: ");
+                    break;
                 }else {
-                    // Remove the meat
+                    Log.i(TAG, "onTorchCheckboxNOTClicked: ");
                     break;
                 }
-            case R.id.checkbox_cheese:
+            case R.id.battery_warning:
                 if (checked) {
-                    // Cheese me
+                    Log.i(TAG, "onBatteryheckboxClicked: ");
+                    break;
                 }else {
-                    // I'm lactose intolerant
+                    Log.i(TAG, "onBatteryheckboxNOTClicked: ");
                     break;
                 }
-            // TODO: Veggie sandwich
+
         }
     }
 
